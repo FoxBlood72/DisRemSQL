@@ -1,5 +1,6 @@
 # DisRemSQL
-## What is DisRemSQL
+![Cool gif](gifs/disrem.gif)
+## What is DisRemSQL?
 DisRemSQL is a Discord bot that can be used to manage MySQL servers. This project was made for managers of databases that wants to run SQL commands directly from Discord.
 
 ## Table of Contents
