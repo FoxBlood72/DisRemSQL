@@ -4,17 +4,17 @@
 DisRemSQL is a Discord bot that can be used to manage MySQL servers. This project was made for managers of databases that wants to run SQL commands directly from Discord.
 
 ## Table of Contents
-[Installations and Configurations]()
+[Installations and Configurations](https://github.com/FoxBlood72/DisRemSQL#installation-and-configuration)
 
-[Warnings]()
+[Warnings](https://github.com/FoxBlood72/DisRemSQL#warnings)
 
-[Recommendations]()
+[Recommendations](https://github.com/FoxBlood72/DisRemSQL#recommendations)
 
-[Commands Usage]()
+[Commands Usage](https://github.com/FoxBlood72/DisRemSQL#usage)
 
-[Commands Descriptions]()
+[Commands Descriptions](https://github.com/FoxBlood72/DisRemSQL#description)
 
-[Contributing]()
+[Contributing](https://github.com/FoxBlood72/DisRemSQL#contributing)
 
 ## Installation and Configuration
 In order to run this discord bot you have to install Nodejs. You can download it from here: https://nodejs.org/en/download/ 
