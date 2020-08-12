@@ -70,7 +70,7 @@ Give permission for the bot to manages messages for automaticaly deleting messag
 The key is provided by discord bot once you added a new mysql server. You can view all your keys by using @shsv command
 
 ## Contributing
-If you have better code, features or even sugestions you can contact me here on github by opening a new "Pull request", or you can contact me on my Discord: FoxBlood#9801
+If you have better code, features or even sugestions you can contact me here on github by opening a new "Issue", or you can contact me on my Discord: FoxBlood#9801
 
 
 
