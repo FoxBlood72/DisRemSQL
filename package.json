@@ -1,0 +1,28 @@
+{
+  "name": "DisRemSQL",
+  "version": "1.0.0",
+  "description": "Control MySQL databases using discord app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "javascript",
+    "nodejs",
+    "mysql",
+	"sql"
+  ],
+  "author": "FoxBlood",
+  "license": "MIT",
+  "dependencies": {
+    "cli-table3": "^0.6.0",
+    "discord.js": "^12.2.0",
+    "hastebin-post": "github:FlareonUwU/hastebin-post",
+    "https": "^1.0.0",
+    "json2csv": "^5.0.1",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2",
+    "sqlite3": "^5.0.0"
+  }
+}
