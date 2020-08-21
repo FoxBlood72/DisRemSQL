@@ -27,8 +27,11 @@ class mysqlplatform{
 
 
         setTimeout(() => {
+            mysqlconnection.destroy();
             if(!connected)
                 return callback(-1);
+
+            
         }, 500);
 
         //return callback(-1);
@@ -62,8 +65,11 @@ class mysqlplatform{
         });
 
         setTimeout(() => {
+            mysqlconnection.destroy();
             if(!connected)
                 return callback(-1);
+
+            
         }, 500);
 
     }
@@ -90,8 +96,11 @@ class mysqlplatform{
 
 
         setTimeout(() => {
+            mysqlconnection.destroy();
             if(!connected)
                 return callback(-1);
+
+            
         }, 500);
     }
 
@@ -129,8 +138,11 @@ class mysqlplatform{
         });
 
         setTimeout(() => {
+            mysqlconnection.destroy();
             if(!connected)
                 return callback(-1);
+
+            
         }, 500);
 
     }
