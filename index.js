@@ -11,6 +11,8 @@ const discodb = new discord_db();
 const mysql_core = require('./util/mysqlplatform');
 const mysql = new mysql_core();
 
+const permbot = require('./util/perm');
+
 
 
 const file_sys = require('fs');
@@ -27,6 +29,12 @@ for(const command_file of command_files)
 bot_dis.on('message', (message) =>{
     if (!message.content.startsWith(bot_config.prefix) || message.author.bot) 
         return;
+
+    if(!permbot.checkPermission(message, discodb))
+    {
+        message.reply("You do not have permission to access din command!");
+        return;
+    }
 
     if(!message.content.startsWith(bot_config.prefix + 'sql'))
     {

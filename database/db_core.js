@@ -172,6 +172,54 @@ class discord_db{
         });
     }
 
+    insert_role(guildid, role, callback)
+    {
+        this.db.run(`INSERT INTO allowedroles(role, guildid) VALUES(?, ?)`, [role, guildid], (err) =>{
+            if(err)
+            {
+                console.log("ERROR WHILE INSERTING ROLE");
+                console.error(err);
+            }
+            return callback(err);
+        });
+    }
+
+    check_role_exist(guildid, role, callback)
+    {
+        this.db.get(`SELECT * FROM allowedroles WHERE role = ? AND guildid = ?`, [role, guildid], (err, row)=>{
+            if(err)
+            {
+                console.log("ERROR WHILE CHECKING ROLE");
+                console.error(err);
+            }
+            return callback(err, row);
+        });
+    }
+
+    delete_role(id, callback)
+    {
+        this.db.run(`DELETE FROM allowedroles WHERE ID = ?`, [id], (err) => {
+            if(err)
+            {
+                console.log("ERROR WHILE DELETING ROLE");
+                console.error(err);
+            }
+            return callback(err);
+        });
+    }
+
+    get_roles(guildid, callback)
+    {
+        this.db.all(`SELECT role FROM allowedroles WHERE guildid = ?`, [guildid], (err, rows) => {
+            if(err)
+            {
+                console.log("ERROR WHILE GETING ROLES");
+                console.error(err);
+            }
+            return callback(err, rows);
+        })
+    }
+
 }
 
 
