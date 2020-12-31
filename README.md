@@ -49,6 +49,9 @@ Give permission for the bot to manages messages for automaticaly deleting messag
 @rmsv <key>
 @sql <MySQL syntax>
 ```
+
+### Who can use this bot?
+Currently the bot is under development and still does not support roles, however users in a guild that has "ADMINISTRATOR" or "MANAGE_MESSAGES" roles will still be able to use it.
   
 ### Description
 @addserver - adds a new mysql server to a guild, if you want to automaticaly delete the message give this permission to the bot "Manage Messages"
